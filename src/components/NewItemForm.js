@@ -1,6 +1,8 @@
 import { Box, Button, Input, Label } from '@twilio-paste/core';
 import { useState } from 'react';
 
+// To prove that dispatch gets passed in to our NewItemFormContainer, we are adding dispatch to NewItemForm(?)
+// export const NewItemForm = ({ onSubmit, dispatch }) => {
 export const NewItemForm = ({ onSubmit }) => {
   const [name, setName] = useState('');
   const [price, setPrice] = useState(0);
@@ -17,6 +19,14 @@ export const NewItemForm = ({ onSubmit }) => {
     if (typeof onSubmit === 'function') {
       onSubmit(name, price);
     }
+
+    // dispatch({
+    //   type: 'ITEM_ADDED',
+    //   payload: {
+    //     name,
+    //     price
+    //   }
+    // });
 
     setName('');
     setPrice(0);

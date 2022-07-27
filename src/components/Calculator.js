@@ -1,9 +1,10 @@
 import { Card } from '@twilio-paste/core';
-import { MenuItemsContainer } from '../containers/MenuItemsContainer';
 import { TipSelectContainer } from '../containers/TipSelectContainer';
 
 // import { MenuItems } from './MenuItems';
-import { NewItemForm } from './NewItemForm';
+// import { NewItemForm } from './NewItemForm';
+import { MenuItemsContainer } from '../containers/MenuItemsContainer';
+import { NewItemFormContainer } from '../containers/NewItemFormContainer';
 import { Summary } from './Summary';
 
 // Now that we are using the MenuItemsContainer, we no longer need hard coded array.
@@ -15,7 +16,8 @@ import { Summary } from './Summary';
 const Calculator = () => {
   return (
     <Card>
-      <NewItemForm />
+      {/* <NewItemForm /> */}
+      <NewItemFormContainer />
       {/* <MenuItems items={items} /> */}
       <MenuItemsContainer />
       <TipSelectContainer />
