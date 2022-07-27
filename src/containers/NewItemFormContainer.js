@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+// import { bindActionCreators } from 'redux';
 import { NewItemForm } from '../components/NewItemForm';
 import { addNewItem } from '../store/items/actions';
 
@@ -28,8 +28,7 @@ const mapDispatchToProps = {
 };
 
 // If you don't give connect any arguments/mapDispatchToProps (did he mean to say "mapStateToProps") it will automatically pass in full dispatch obj.
-// So here we are using null but it will use mapStateToProps
-
+// So here we are using null but it will get mapStateToProps passed in automatically
 export const NewItemFormContainer = connect(
   null,
   mapDispatchToProps
