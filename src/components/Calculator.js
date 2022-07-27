@@ -2,10 +2,11 @@ import { Card } from '@twilio-paste/core';
 import { TipSelectContainer } from '../containers/TipSelectContainer';
 
 // import { MenuItems } from './MenuItems';
-// import { NewItemForm } from './NewItemForm';
 import { MenuItemsContainer } from '../containers/MenuItemsContainer';
+// import { NewItemForm } from './NewItemForm';
 import { NewItemFormContainer } from '../containers/NewItemFormContainer';
-import { Summary } from './Summary';
+// import { Summary } from './Summary';
+import { SummaryContainer } from '../containers/SummaryContainer';
 
 // Now that we are using the MenuItemsContainer, we no longer need hard coded array.
 // const items = [
@@ -21,7 +22,8 @@ const Calculator = () => {
       {/* <MenuItems items={items} /> */}
       <MenuItemsContainer />
       <TipSelectContainer />
-      <Summary />
+      {/* <Summary /> */}
+      <SummaryContainer />
     </Card>
   );
 };
